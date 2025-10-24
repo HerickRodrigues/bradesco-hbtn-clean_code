@@ -1,53 +1,33 @@
-import java.util.Date;
-import java.util.List;
-import java.util.Collections;
-import java.net.URL;
-
 public class Name {
-    // Variables with self-explanatory names
+    //variáveis que falam por si só 
+    //A
     public Date modifiedDate;
+    public List<Testcase> findAllTestcasesByUser(Name.User user){};
 
-    // Method names should start with a verb and use camelCase
-    public List<Testcase> findAllTestCasesByUser(Name.User user) {
-        // minimal safe implementation returning an empty list
-        return Collections.emptyList();
-    }
+    //Declarações corretas
+    //A
+    public List<Account> AccountList;
 
-    // List declaration - use a clear, camelCase plural name
-    public List<Account> accounts;
+    // Sem Prefixos
+    //B
+    public void deleteUser(Name.User user){};
 
-    // No prefixes in parameters
-    public void deleteUser(Name.User user) {
-        // delete logic goes here
-    }
+    // Evite mapa mental    
+    //B
+    public URL url;
 
-    // Clear and descriptive variable names
-    public URL resourceUrl;
+    // Classe possui nomes próprios, funções devem ter verbos
+    //A
+    public class TableRepresent {};
+    public void saveCar(){};
 
-    // Classes with proper names
-    public class TablePresenter {
-        // representation logic
-    }
+    // Uma palavra por conceito
+    //B
+    public saveUser(){}; createAccount(){}; generateContract(){};
 
-    // Methods use verbs and have simple, valid bodies
-    public void saveCar() {
-        // save car logic
-    }
 
-    // Consistent verb usage for similar operations
-    public void saveUser() {
-        // save user logic
-    }
-
-    public void saveAccount() {
-        // save account logic
-    }
-
-    public void saveContract() {
-        // save contract logic
-    }
-
-    // Constants with clear names and static modifier
-    public static final int DAYS_IN_YEAR = 360;
-    public static final int HOURS_IN_WEEK = 168;
+    //Use constants, enums instead of magic numbers, abbreviations
+    //B    
+    public final int DAYS_IN_YEAR = 360;
+    public final int HOURS_IN_WEEK = 168;
 }
